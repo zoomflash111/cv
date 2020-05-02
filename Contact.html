@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <h2><u>My Contact Details</u></h2>
+  <p>My Fictional Address : Earth,Solar System</p>
+  <p>Phone No : 888-777-1234</p>
+  <p>Email : email@mail.com</p><hr>
+  <form class="" action="index.html" method="post">
+    <!-- action : After clicking on submit button it will take you to index.html -->
+    <!-- post : post data to index.html -->
+    <label>Your Name : </label>
+    <input type="text" name="Name" minlength="5" maxlength="20" size="10">
+    <input type="Submit"><br /><br />
+    <label>Email : </label>
+    <input type="email" name="Email" pattern=".+@gmail.com" required>
+    <!-- required : When present, it specifies that the element must be filled out before submitting the form -->
+    <!-- pattern : To tell user how the patter should be (@gmail.com) -->
+    <input type="Submit"><br /><br />
+    <label>Password : </label>
+    <input type="password" name="Password">
+    <!-- password : shows nothing while typing (*****) -->
+    <input type="Submit"><br /><br />
+    <label>Profile Pic : </label>
+    <input type="file" multiple><br><br>
+    <!-- file : to choose a file -->
+    <!-- multiple : to choose multiple files -->
+    <label>Gender : </label>
+    <input type="radio" name="gender" value="">
+    <label>Male</label>
+    <input type="radio" name="gender" value="">
+    <label>Female</label><br><br>
+    <label>Age : </label>
+    <input type="checkbox">
+    <label>0-20</label>
+    <input type="checkbox">
+    <label>20-40</label>
+    <input type="checkbox">
+    <label>40-60</label><br><br>
+    <label>Comments : </label><br>
+    <textarea rows="5" namee="Comments" cols="35" placeholder="Enter your comments here"></textarea><br><br>
+    <input type="Submit">
+  </form>
+</body>
+
+</html>
